@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Eats</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #e74c3c;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    margin: 10px 0 20px;
+    font-size: 1.2em;
+}
+
+header .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header .btn:hover {
+    background: #27ae60;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#menu .dishes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#menu .dish {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+#menu .dish img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#menu .dish h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+#menu .dish p {
+    margin: 0;
+    font-size: 1em;
+}
+
+#about, #contact {
+    background: #f4f4f4;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form label {
+    margin-top: 10px;
+}
+
+#contact form input, #contact form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background: #c0392b;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Delicious Eats</h1>
+            <p>Fresh and delicious food delivered to your doorstep.</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </header>
+    <section id="menu" class="container">
+        <h2>Our Menu</h2>
+        <div class="dishes">
+            <div class="dish">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <h3>Delicious Pizza</h3>
+                <p>Cheesy and loaded with toppings.</p>
+            </div>
+            <div class="dish">
+                <img src="images/burger.jpg" alt="Burger">
+                <h3>Juicy Burger</h3>
+                <p>Grilled to perfection.</p>
+            </div>
+            <div class="dish">
+                <img src="images/salad.jpg" alt="Salad">
+                <h3>Fresh Salad</h3>
+                <p>Crisp and healthy.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>We are passionate about delivering fresh and delicious meals to our customers. Our ingredients are sourced locally and prepared with care.</p>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+    
+        <div class="container footer">
+            <p>&copy; 2024 Delicious Eats. All rights reserved.</p>
+        </div>
+    
+</body>
+</html>
