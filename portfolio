@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+      .first {
+    background-image: linear-gradient(to left, green, violet);
+    background-size: cover;
+    height: 100%;
+}
+
+.bng {
+    background-color: grey;
+    padding: 20px;
+    font-size: 30px;
+
+    cursor: pointer;
+    color: white;
+}
+
+.anchor {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.bng:hover {
+    background-color: lightblue;
+}
+
+.home1:active {
+    background-color: white;
+}
+
+.home2:active {
+    background-color: white;
+}
+
+.home3:active {
+    background-color: white;
+}
+
+.home4:active {
+    background-color: white;
+}
+
+.me {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.para1 {
+    font-size: 30px;
+    width: 500px;
+}
+
+.image {
+    height: 50vh;
+    border-radius: 80px;
+    margin-left: 90px;
+    margin-top:180px
+}
+
+.html {
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 40px;s
+    margin-bottom: 30px;
+    height: 33vh;
+    width: 400px;
+    margin: 20px;
+    cursor: pointer;
+    border-style: dotted;
+    border-color: orange;
+
+}
+
+.skhead {
+    font-size: 60px;
+    font-family: "Beer Serif";
+    margin-bottom: 60px;
+}
+
+.sk1 {
+    margin: 25px;
+
+}
+
+.image1 {
+    height: 60px;
+}
+
+.html:hover {
+    background-color: lightpink;
+}
+
+.html:active {
+    background-color: orange;
+}
+
+.projects {
+    background-color: transparent;
+    margin-bottom: 20px;
+    margin: 20px;
+    padding: 5px;
+    font-family: "Bree Serif";
+    cursor: pointer;
+}
+
+.pro {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.project-head {
+    color: Blue;
+    padding: 10px;
+
+
+}
+
+.lasthead {
+    color: blue;
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.last {
+    background-color: grey;
+    width: 159px;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 25px;
+    border-color: orange;
+    border-style: dotted;
+    margin: 15px;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+.last:hover {
+    background-color: orange;
+}
+
+.lop {
+    padding: 10px;
+    margin: 30px;
+    font-size: 40px;
+}
+.insta{
+    font-size :20px;
+    height:30px
+    
+    
+}
+.tweet {
+    margin-right:5px
+}
+.link {
+    margin-right: 5px;
+}
+
+.image0 {
+    height: 70px;
+    width: 70px;
+    border-radius: 40px;
+}
+
+.heading {
+    color: #cced00;
+    font-size: 20px;
+    margin-top:20px
+}
+
+.para {
+    color: black;
+    font-size: 10px;
+}
+
+.icon {
+    color: #5a7184;
+}
+
+.bottom {
+    background-color: #0d2436;
+}
+.mail {
+    margin-right:30px !important;
+}
+.para0 {
+    color:grey;
+    text-align:center;
+    margin-right:80px !important;
+    font-size:20px;
+}
+.sai{
+    margin:5px;
+    border-radius:10px;
+    cursor:pointer;
+    background-color: transparent;
+    color:black;
+    border-color:orange;
+}
+.sai:hover{
+    background-color:lightcoral;
+}
+.sai:active {
+    background-color:lightgreen;
+}
+
+
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="first">
+        <nav class="navbar navbar-expand-lg navbar-light bng ">
+            <a class="navbar-brand anchor" href="#">Satish</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto home">
+
+                    <a class="nav-link active home1" href="#aboutMe">About Me<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active home2" href="#mySkills">Skills</a>
+                    <a class="nav-link active home3" href="#myProjects">Projects</a>
+                    <a class="nav-link active home4" href="#myLetter">Recommendations</a>
+                </div>
+            </div>
+        </nav>
+        <div class="myself" id="aboutMe">
+          <h1 class="lop">AboutMe</h1>
+            
+            
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 col-md-6 me order-2">
+                        <h1 class="head1">Hi, I'm Satish</h1>
+                        <p class="para1"> i am currently studying 3rd year and i am purusing my majors in Electronics and communications.Currently i am enough familiar with HTML,CSS and JavaScript to work with miniProjects .i am eager to develop my skills which wiil be helpful for me in future.I can edit stuff too....</p>
+
+                    </div>
+                    <div class="col-12 col-md-5 order-md-1">
+                        <img src="https://res.cloudinary.com/djdxktoia/image/upload/v1716800569/IMG-20221001-WA0005_q98zte.jpg" class="image" />
+                    </div>
+                </div>
+                <div class=" col-12 icons">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.shMLwGIsbDrfGhWzmHp0mQHaF7&pid=Api&P=0&h=220" class="insta"/>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.EhGYQ7HxEvQwe0P7EHauuQHaGC&pid=Api&P=0&h=220" class="insta tweet"/>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.P_z8uTsVJ8tmPn2prJwOpQHaHa&pid=Api&P=0&h=220" class="link insta"/>
+                </div>
+                <div>
+                    <button class="sai" onclick="display('contactMe')">Contact Me</button>
+                    <button class="sai">Resume</button>
+                </div>
+            </div>
+        </div>
+        <div class="skil" id="mySkills">
+            <h1 class="skhead">Skills:</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 html one ">
+
+
+                        <h1 class="sk1">HTML & CSS</h1>
+                        <p class="sk2">4 months experience</p>
+                        <img src="https://logodix.com/logo/470392.png" class="image1" />
+                        <img src="https://img.freepik.com/premium-vector/css-logo-design_731343-114.jpg" class="image1" />
+
+                    </div>
+                    <div class="col-12 col-md-4 html two">
+
+
+                        <h1 class="sk1">JavaScript</h1>
+                        <p class="sk2">2 months experience</p>
+                        <img src="http://pluspng.com/img-png/logo-javascript-png-javascript-ile-twitter-retweet-uygulamas-833.png" class="image1" />
+
+                    </div>
+                    <div class="col-12 col-md-4 html three">
+
+
+                        <h1 class="sk1">python</h1>
+                        <p class="sk2">4 months experience</p>
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.KnOS3vOcNhLla8LSZw4TugHaHa&pid=Api" class="image1" />
+
+                    </div>
+                    <div class="col-12 col-md-4 html four">
+                        <h1 class="sk1">Java</h1>
+                        <p class="sk2">6 months experience</p>
+                        <img src="https://logolook.net/wp-content/uploads/2022/11/Java-Logo.png" class="image1" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects" id="myProjects">
+            <h1 class="project-head">Projects:</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 pro">
+                        <h1>Pollution</h1>
+                        <p>&#9679; Developed a web app using HTML,CSS that ec-explains the whole scenario of environment pollution</p>
+
+                    </div>
+                    <div class="col-12 pro">
+                        <h1>Resturant Website</h1>
+                        <p>&#9679;It can be created by using Html,CSS,javascript ,it explains the how to search the food in apps and how to order the food it gives the full details about the resturants</p>
+                    </div>
+                    <div class="col-12 pro">
+                        <h1>Telegram Chatbot</h1>
+                        <p>&#9679;Developed a telegram chatbot which takes input from the user and given output,image based on what user asked for </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Recommendations" id="myLetter">
+
+            <h1 class="lasthead">Recommendations</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 last">
+                        <p>"satish is very quick learner and quickly grasps key concepts of web development.He got a great attitude & he is an excellent team player.<br>He has a curious mind and asks the right question.He takes intitative within a team and has potential to lead the team"</p>
+                    </div>
+                    <div class="col-12 col-md-5 last">
+                        <p>"working with Satish has been an awesome experience.He is highly knowledge and always goes the extra step to make sure everything is right.For any future projects that need he expertise I would defintely want to work with his again</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contactMe">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex flex-row ">
+                    <img class="image0 mr-3" src="https://res.cloudinary.com/djdxktoia/image/upload/v1716800569/IMG-20221001-WA0005_q98zte.jpg" />
+                    <div>
+                        <h1 class="heading">R satish</h1>
+                        <p class="para">Frontend Developer</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-1">
+                    <h1 class="heading phone">Phone No.</h1>
+                    <div class="d-flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" fill="currentColor" class=" mr-3 icon bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <p class="para">9876543210</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h1 class="heading mail">E-mail</h1>
+                    <div class="d-flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" fill="currentColor" class="icon mr-3 bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                        </svg>
+                        <p class="para">satish3@gmail.com</p>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="bottom text-center">
+        <h1 class="para0">2024 by satish. Created with Bootstrap</h1>
+        
+
+    </div>
+
+
+</body>
+
+</html>
